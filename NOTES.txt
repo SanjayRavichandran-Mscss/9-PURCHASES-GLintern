@@ -1,0 +1,38 @@
+This project involves developing a backend API using Node.js and MySQL for managing user registrations, product details, and purchase records. The application consists of three main tables: user_details, product_details, and purchase_details, all connected via relationships.
+
+The core functionality includes:
+
+A user-register endpoint for adding users.
+A product-register endpoint for registering products.
+A purchase-details endpoint to record purchases, ensuring the product's quantity is updated and validating user and product existence before inserting purchase data.
+The project demonstrates basic CRUD operations, database connections, and the use of promises with mysql2/promise for asynchronous handling of MySQL queries. It also includes error handling and a single endpoint to manage all operations.
+
+
+*** Database Name in mysql workbench : purchases
+
+*Endpoint for users , products , purchases : http://localhost:5000/api/register
+
+*method :POST
+
+{
+    "user": {
+        "username": "sanjay",
+        "mob_num": "1234567890",
+        "city": "CityName",
+        "state": "StateName",
+        "country": "CountryName"
+    },
+    "product": {
+        "product_name": "Laptop",
+        "product_quantity": 50,
+        "product_price": 75000
+    },
+    "purchase": {
+        "purchase_quantity": 2
+    }
+}
+
+
+********************************************************************************************
+
+
